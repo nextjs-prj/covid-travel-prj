@@ -1,0 +1,14 @@
+.mapboxControls {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 900px) and (min-width: 300px) {
+  .mapboxControls {
+    flex-direction: column;
+    margin: 0 0.65rem;
+  }
+  .mapboxControls button {
+    margin-bottom: 0.65rem;
+  }
+}

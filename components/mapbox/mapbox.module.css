@@ -1,0 +1,13 @@
+.mapboxContainer {
+  position: relative;
+  width: 85%;
+}
+
+@media screen and (max-width: 900px) and (min-width: 300px) {
+  .mapboxgl-canvas {
+    width: 100%;
+  }
+  .mapboxContainer {
+    width: 100%;
+  }
+}

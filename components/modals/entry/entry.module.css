@@ -1,0 +1,78 @@
+.entryContRestrictions {
+  outline: unset;
+}
+
+.entryContRestrictions p {
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.entryButton {
+  padding: 0.55rem;
+  font-weight: 900;
+  font-size: medium;
+  margin-right: 4px;
+  border: unset;
+  color: white;
+  border-radius: 4px;
+}
+
+.entryP {
+  padding: 0.3rem;
+  border: 1px solid black;
+  border-radius: 3px;
+  margin: unset;
+}
+
+.entryCloseIcon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid #292998;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.entryLoader {
+  /*  padding: 1.9rem; */
+  width: 400px;
+  height: 400px;
+  border-top: 6px solid #bdb8b8;
+}
+
+.entryLoaderProgress {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  position: absolute;
+  height: 6px;
+  top: 0;
+  background-color: black;
+  animation-duration: 2s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slidein {
+  from {
+    width: 0%;
+  }
+  75% {
+    width: 50%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 300px) {
+  .entryLoader {
+    /*  padding: 1.9rem; */
+    width: 300px;
+  }
+}
