@@ -1,10 +1,16 @@
 import styles from "./mapInfoHero.module.css";
+import { MapsIcon } from "../icons";
 
 export default function MapInfoHero() {
   return (
     <div className={styles.mapInfoContainer}>
       <div className={styles.mapInfoRestriction}>
-        <h2>Travel restrictions map</h2>
+        <h2>
+          <span style={{ marginRight: "6px" }}>
+            <MapsIcon />
+          </span>{" "}
+          Travel restrictions map
+        </h2>
       </div>
       <div className={styles.mapInfoContent}>
         <div className={styles.mapInfoContentTitle}>

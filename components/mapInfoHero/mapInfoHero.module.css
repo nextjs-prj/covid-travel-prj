@@ -15,6 +15,10 @@
 .mapInfoRestriction h2 {
   font-weight: 700;
   font-size: large;
+
+  display: flex;
+  align-items: center;
+  margin-bottom: unset;
 }
 
 .mapInfoContent {
