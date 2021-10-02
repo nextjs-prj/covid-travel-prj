@@ -107,20 +107,20 @@ export default function Footer() {
         </div>
         <div className={styles.footerRow}>
           <div className={styles.lastFooter}>
-            <p style={{ display: "flex" }}>
+            <p className={styles.lastFooterTermsPrivacy}>
               <Link href="/terms">
-                <a style={{ paddingRight: "14px" }}>Terms</a>
+                <a>Terms</a>
               </Link>{" "}
               |{" "}
               <Link href="/privacy">
-                <a style={{ paddingLeft: "14px" }}>Privacy</a>
+                <a>Privacy</a>
               </Link>
             </p>
             <p className={styles.lastFooterCopyright}>
               © Copyright 2021 WhereNext Experiences Pte. Ltd. All rights
               reserved.
             </p>
-            <div style={{ display: "flex" }}>
+            <div className={styles.lastFooterSocial}>
               <Link href="">
                 <a style={{ padding: "0 8px" }}>
                   <img src="https://www.wherenext.to/_next/image?url=%2Fassets%2Fimg%2Ficon%2Ffacebook.svg&w=48&q=75" />
