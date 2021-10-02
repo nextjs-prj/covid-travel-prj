@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import styles from "./footer.module.css";
 
 export default function Footer() {
@@ -30,7 +32,7 @@ export default function Footer() {
                 Travel experiences with a focus on volunteering and animal
                 conservation
               </p>
-              <a href="mailto:contact@wherenext.to">contact@wherenext.to</a>
+              <a>contact@wherenext.to</a>
             </div>
             <div
               className={`${styles.footerRowItem} ${styles.footerRowChatItem}`}
@@ -51,13 +53,13 @@ export default function Footer() {
             <div className={styles.footerRowItem}>
               <ul>
                 <li>
-                  <a href="/contact">Partner with Us</a>
+                  <a>Partner with Us</a>
                 </li>
                 <li>
-                  <a href="/contact">Corporate Social Responsibility</a>
+                  <a>Corporate Social Responsibility</a>
                 </li>
                 <li>
-                  <a href="/contact">Contact Us</a>
+                  <a>Contact Us</a>
                 </li>
               </ul>
             </div>
@@ -69,16 +71,24 @@ export default function Footer() {
             <div className={styles.footerRowItem}>
               <ul>
                 <li>
-                  <a href="/contact"> 1% for the Planet</a>
+                  <Link href="/contact">
+                    <a> 1% for the Planet</a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/contact">Pledge 1%</a>
+                  <Link href="/contact">
+                    <a>Pledge 1%</a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/contact">Kiva</a>
+                  <Link href="/contact">
+                    <a>Kiva</a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/contact">One Tree Planted</a>
+                  <Link href="/contact">
+                    <a>One Tree Planted</a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -98,43 +108,39 @@ export default function Footer() {
         <div className={styles.footerRow}>
           <div className={styles.lastFooter}>
             <p style={{ display: "flex" }}>
-              <a style={{ paddingRight: "14px" }} href="/terms">
-                Terms
-              </a>{" "}
+              <Link href="/terms">
+                <a style={{ paddingRight: "14px" }}>Terms</a>
+              </Link>{" "}
               |{" "}
-              <a style={{ paddingLeft: "14px" }} href="/privacy">
-                Privacy
-              </a>
+              <Link href="/privacy">
+                <a style={{ paddingLeft: "14px" }}>Privacy</a>
+              </Link>
             </p>
             <p className={styles.lastFooterCopyright}>
               © Copyright 2021 WhereNext Experiences Pte. Ltd. All rights
               reserved.
             </p>
             <div style={{ display: "flex" }}>
-              <a
-                style={{ padding: "0 8px" }}
-                href="https://www.facebook.com/wherenext.to.travel"
-              >
-                <img src="https://www.wherenext.to/_next/image?url=%2Fassets%2Fimg%2Ficon%2Ffacebook.svg&w=48&q=75" />
-              </a>
-              <a
-                style={{ padding: "0 8px" }}
-                href="https://www.instagram.com/wherenext.to/"
-              >
-                <img src="https://www.wherenext.to/_next/image?url=%2Fassets%2Fimg%2Ficon%2Finstagram.svg&w=48&q=75" />
-              </a>
-              <a
-                style={{ padding: "0 8px" }}
-                href="https://twitter.com/wherenext_to"
-              >
-                <img src="https://www.wherenext.to/_next/image?url=%2Fassets%2Fimg%2Ficon%2Ftweter.svg&w=48&q=75" />
-              </a>
-              <a
-                style={{ padding: "0 8px" }}
-                href="https://www.linkedin.com/company/wherenext-to/"
-              >
-                <img src="https://www.wherenext.to/_next/image?url=%2Fassets%2Fimg%2Ficons%2Flinkedin.svg&w=48&q=75" />
-              </a>
+              <Link href="">
+                <a style={{ padding: "0 8px" }}>
+                  <img src="https://www.wherenext.to/_next/image?url=%2Fassets%2Fimg%2Ficon%2Ffacebook.svg&w=48&q=75" />
+                </a>
+              </Link>
+              <Link href="">
+                <a style={{ padding: "0 8px" }}>
+                  <img src="https://www.wherenext.to/_next/image?url=%2Fassets%2Fimg%2Ficon%2Finstagram.svg&w=48&q=75" />
+                </a>
+              </Link>
+              <Link href="">
+                <a style={{ padding: "0 8px" }}>
+                  <img src="https://www.wherenext.to/_next/image?url=%2Fassets%2Fimg%2Ficon%2Ftweter.svg&w=48&q=75" />
+                </a>
+              </Link>
+              <Link href="">
+                <a style={{ padding: "0 8px" }}>
+                  <img src="https://www.wherenext.to/_next/image?url=%2Fassets%2Fimg%2Ficons%2Flinkedin.svg&w=48&q=75" />
+                </a>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Link from "next/link";
 
 import styles from "./header.module.css";
 import { HamburgerIcon } from "./../icons";
@@ -9,19 +10,21 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.headerContainer}>
         <div className={styles.headerLogo}>
-          <a title="home" href="/">
-            <div
-              style={{
-                width: "175px",
-                height: "35px",
-                backgroundImage:
-                  "url(https://res.cloudinary.com/dail4fbms/image/upload/v1630337845/logo_full_tfwpzz.svg)",
-                backgroundSize: "contain",
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "center center",
-              }}
-            ></div>
-          </a>
+          <Link href="">
+            <a title="home">
+              <div
+                style={{
+                  width: "175px",
+                  height: "35px",
+                  backgroundImage:
+                    "url(https://res.cloudinary.com/dail4fbms/image/upload/v1630337845/logo_full_tfwpzz.svg)",
+                  backgroundSize: "contain",
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "center center",
+                }}
+              ></div>
+            </a>
+          </Link>
         </div>
         <div className={styles.headerMobile}>
           <span onClick={() => setShowAside(true)}>
@@ -34,10 +37,14 @@ export default function Header() {
         <div className={styles.headerMenu}>
           <ul>
             <li className={styles.headerMenuItem}>
-              <a href="/about">About us</a>
+              <Link href="">
+                <a>About us</a>
+              </Link>
             </li>
             <li className={styles.headerMenuItem}>
-              <a href="/contact">Contact</a>
+              <Link href="">
+                <a>Contact</a>
+              </Link>
             </li>
           </ul>
         </div>
