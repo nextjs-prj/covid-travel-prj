@@ -1,0 +1,49 @@
+.mapInfoContainer {
+  background-color: #222426;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  /*margin: 0.85rem 0;*/
+  padding: 0 5.85rem;
+  padding-bottom: 2rem;
+}
+
+.mapInfoRestriction {
+  color: #ffe033;
+}
+
+.mapInfoRestriction h2 {
+  font-weight: 700;
+  font-size: large;
+}
+
+.mapInfoContent {
+  display: flex;
+  align-items: center;
+}
+
+.mapInfoContentTitle {
+  display: flex;
+  align-items: center;
+}
+
+.mapInfoContentTitle h1 {
+  font-size: xxx-large;
+}
+
+.mapInfoContentDesc p {
+  font-size: large;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 900px) and (min-width: 300px) {
+  .mapInfoContent {
+    flex-direction: column;
+  }
+
+  .mapInfoContainer {
+    padding: 0 0.85rem;
+    margin-bottom: 0.95rem;
+    padding-bottom: 0.95rem;
+  }
+}

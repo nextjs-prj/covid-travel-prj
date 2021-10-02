@@ -18,6 +18,7 @@ import {
 } from "./../icons";
 import MapboxControl from "../mapboxControl";
 import TravelIndicatorColor from "../travelIndicatorColor";
+import MapInfoHero from "../mapInfoHero";
 
 export default function Mapbox() {
   const [passport, setPassport] = useState({
@@ -265,45 +266,49 @@ export default function Mapbox() {
   }
 
   return (
-    <div className={styles.mapboxContainer}>
-      <MapboxControl
-        buttonHandler={(type) => {
-          setDisplayCountriesModal(true);
-          setButtonType(type);
-        }}
-        passport={passport}
-        dest={dest}
-        trip={trip}
-        from={from}
-        vaccFn={vaccFn}
-      />
-      <div
-        ref={ref}
-        style={{
-          height: "500px",
-        }}
-      />
-      <TravelIndicatorColor />
+    <>
+      <MapInfoHero />
 
-      {displayCountriesModal ? (
-        <CountriesModal
-          onSelect={selectFn}
-          closeFn={() => setDisplayCountriesModal(false)}
-          headerTitle={buttonType?.headerTitle}
-          labelTitle={buttonType?.labelTitle}
-        />
-      ) : null}
-
-      {showEntryModal ? (
-        <EntryModal
-          trip={trip}
+      <div className={styles.mapboxContainer}>
+        <MapboxControl
+          buttonHandler={(type) => {
+            setDisplayCountriesModal(true);
+            setButtonType(type);
+          }}
           passport={passport}
           dest={dest}
+          trip={trip}
           from={from}
-          vaccinated={vacc}
-          closeFn={() => setShowEntryModal(false)}
+          vaccFn={vaccFn}
         />
-      ) : null}
-    </div>
+        <div
+          ref={ref}
+          style={{
+            height: "500px",
+          }}
+        />
+        <TravelIndicatorColor />
+
+        {displayCountriesModal ? (
+          <CountriesModal
+            onSelect={selectFn}
+            closeFn={() => setDisplayCountriesModal(false)}
+            headerTitle={buttonType?.headerTitle}
+            labelTitle={buttonType?.labelTitle}
+          />
+        ) : null}
+
+        {showEntryModal ? (
+          <EntryModal
+            trip={trip}
+            passport={passport}
+            dest={dest}
+            from={from}
+            vaccinated={vacc}
+            closeFn={() => setShowEntryModal(false)}
+          />
+        ) : null}
+      </div>
+    </>
   );
 }
