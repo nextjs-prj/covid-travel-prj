@@ -9,17 +9,18 @@ export default function MapInfoHero() {
           <span style={{ marginRight: "6px" }}>
             <MapsIcon />
           </span>{" "}
-          Travel restrictions map
+          {"Travel restrictions map"}
         </h2>
       </div>
       <div className={styles.mapInfoContent}>
         <div className={styles.mapInfoContentTitle}>
-          <h1>Where's open, what's required?</h1>
+          <h1>{"Where's open, what's required?"}</h1>
         </div>
         <div className={styles.mapInfoContentDesc}>
           <p>
-            View entry restrictions and COVID-19 travel requirements for
-            countries around the world. Choose a country on the map to begin.
+            {
+              "View entry restrictions and COVID-19 travel requirements for countries around the world. Choose a country on the map to begin."
+            }
           </p>
         </div>
       </div>
