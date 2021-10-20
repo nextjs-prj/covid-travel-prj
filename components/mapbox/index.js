@@ -255,6 +255,7 @@ export default function Mapbox() {
 
   function vaccFn(e) {
     setVacc(e.target.checked);
+    loadCountriesRestrictions(from?.code && passport?.code);
   }
 
   async function loadCountriesRestrictions(countryCode) {
