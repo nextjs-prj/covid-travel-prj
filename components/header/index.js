@@ -17,7 +17,7 @@ export default function Header() {
                   width: "175px",
                   height: "35px",
                   backgroundImage:
-                    "url(https://res.cloudinary.com/dail4fbms/image/upload/v1630337845/logo_full_tfwpzz.svg)",
+                    "url(https://apply.joinsherpa.com/assets/img/logo-sherpa.svg)",
                   backgroundSize: "contain",
                   backgroundRepeat: "no-repeat",
                   backgroundPosition: "center center",
@@ -66,10 +66,11 @@ function HeaderMobileAside({ closeFn }) {
           }}
         >
           <img
+            alt="Logo small"
             style={{
               height: "4rem",
             }}
-            src="https://www.wherenext.to/_next/image?url=%2Fassets%2Fimg%2FlogoSmall.svg&w=64&q=75"
+            src="https://apply.joinsherpa.com/assets/img/logo-sherpa.svg"
           />
           <span
             style={{

@@ -3,7 +3,8 @@ import axios from "axios";
 import qs from "qs";
 import { getTravelStatus } from "../../utils";
 
-const apiKey = process.env.apiKey;
+// const apiKey = process.env.apiKey;
+const { apiKey, apiUrl } = process.env;
 
 const entryStatus = {
   1: "Normal",
@@ -12,7 +13,7 @@ const entryStatus = {
 };
 
 export default async function handler(req, res) {
-  const url = "https://prod.greatescape.co/api/travel/countries/restrictions/";
+  const url = apiUrl;
   const { from, trip, dest, passport, vaccinated } = req.body;
 
   // get travel restrictions for people from "from" country

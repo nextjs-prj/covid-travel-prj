@@ -12,9 +12,9 @@ export default function Footer() {
               <img
                 width="150px"
                 height="50px"
-                alt=""
+                alt="Logo"
                 href="/"
-                src="https://www.wherenext.to/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdail4fbms%2Fimage%2Fupload%2Fv1630337845%2Flogo_full_tfwpzz.svg&w=256&q=75"
+                src="https://apply.joinsherpa.com/assets/img/logo-main-white.svg"
                 decoding="async"
                 style={{
                   boxSizing: "border-box",
@@ -29,65 +29,59 @@ export default function Footer() {
             </div>
             <div className={styles.footerRowItem}>
               <p>
-                Travel experiences with a focus on volunteering and animal
-                conservation
+                Sherpa is your guide to getting the right travel documentation
+                and understanding up-to-date travel requirements. An independent
+                resource, we are not sponsored by, affiliated with or funded by
+                any government agency.{" "}
               </p>
-              <a>contact@wherenext.to</a>
             </div>
             <div
               className={`${styles.footerRowItem} ${styles.footerRowChatItem}`}
             >
               <p>Let’s chat:</p>
               <a>
-                <img src="https://www.wherenext.to/_next/image?url=%2Fassets%2Fimg%2Ficon%2Fmassenger.svg&w=64&q=75" />
+                <img
+                  alt="Messenger icon"
+                  src="https://www.wherenext.to/_next/image?url=%2Fassets%2Fimg%2Ficon%2Fmassenger.svg&w=64&q=75"
+                />
               </a>
               <a>
-                <img src="https://www.wherenext.to/_next/image?url=%2Fassets%2Fimg%2Ficon%2Fwhatsapp.svg&w=64&q=75" />
+                <img
+                  alt="Whatsapp"
+                  src="https://www.wherenext.to/_next/image?url=%2Fassets%2Fimg%2Ficon%2Fwhatsapp.svg&w=64&q=75"
+                />
               </a>
             </div>
           </div>
           <div className={styles.footerRowItemContainer}>
             <div className={styles.footerRowItem}>
-              <h3>For business</h3>
+              <h3>Solutions</h3>
             </div>
             <div className={styles.footerRowItem}>
               <ul>
                 <li>
-                  <a>Partner with Us</a>
+                  <a>Travel Restrictions</a>
                 </li>
                 <li>
-                  <a>Corporate Social Responsibility</a>
-                </li>
-                <li>
-                  <a>Contact Us</a>
+                  <a>Explore Visas</a>
                 </li>
               </ul>
             </div>
           </div>
           <div className={styles.footerRowItemContainer}>
             <div className={styles.footerRowItem}>
-              <h3>Our charities</h3>
+              <h3>Company</h3>
             </div>
             <div className={styles.footerRowItem}>
               <ul>
                 <li>
                   <Link href="/contact">
-                    <a> 1% for the Planet</a>
+                    <a> About Us</a>
                   </Link>
                 </li>
                 <li>
                   <Link href="/contact">
-                    <a>Pledge 1%</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/contact">
-                    <a>Kiva</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/contact">
-                    <a>One Tree Planted</a>
+                    <a>News Room</a>
                   </Link>
                 </li>
               </ul>
@@ -95,13 +89,10 @@ export default function Footer() {
           </div>
           <div className={styles.footerRowItemContainer}>
             <div className={styles.footerRowItem}>
-              <h3>Our partners</h3>
+              <h3>eVisa and eTA help</h3>
             </div>
             <div className={styles.footerRowItem}>
-              <p>
-                We partner with travel providers and charities that give back to
-                local communities.
-              </p>
+              <p>Travel restrictions</p>
             </div>
           </div>
         </div>
@@ -117,28 +108,39 @@ export default function Footer() {
               </Link>
             </p>
             <p className={styles.lastFooterCopyright}>
-              © Copyright 2021 WhereNext Experiences Pte. Ltd. All rights
-              reserved.
+              © Copyright 2021 Visa Run, Inc. Ltd. All rights reserved.
             </p>
             <div className={styles.lastFooterSocial}>
               <Link href="">
                 <a style={{ padding: "0 8px" }}>
-                  <img src="https://www.wherenext.to/_next/image?url=%2Fassets%2Fimg%2Ficon%2Ffacebook.svg&w=48&q=75" />
+                  <img
+                    alt="Facebook icon"
+                    src="https://www.wherenext.to/_next/image?url=%2Fassets%2Fimg%2Ficon%2Ffacebook.svg&w=48&q=75"
+                  />
                 </a>
               </Link>
               <Link href="">
                 <a style={{ padding: "0 8px" }}>
-                  <img src="https://www.wherenext.to/_next/image?url=%2Fassets%2Fimg%2Ficon%2Finstagram.svg&w=48&q=75" />
+                  <img
+                    alt="Instagram icon"
+                    src="https://www.wherenext.to/_next/image?url=%2Fassets%2Fimg%2Ficon%2Finstagram.svg&w=48&q=75"
+                  />
                 </a>
               </Link>
               <Link href="">
                 <a style={{ padding: "0 8px" }}>
-                  <img src="https://www.wherenext.to/_next/image?url=%2Fassets%2Fimg%2Ficon%2Ftweter.svg&w=48&q=75" />
+                  <img
+                    alt="Twitter icon"
+                    src="https://www.wherenext.to/_next/image?url=%2Fassets%2Fimg%2Ficon%2Ftweter.svg&w=48&q=75"
+                  />
                 </a>
               </Link>
               <Link href="">
                 <a style={{ padding: "0 8px" }}>
-                  <img src="https://www.wherenext.to/_next/image?url=%2Fassets%2Fimg%2Ficons%2Flinkedin.svg&w=48&q=75" />
+                  <img
+                    alt="LinkedIn icon"
+                    src="https://www.wherenext.to/_next/image?url=%2Fassets%2Fimg%2Ficons%2Flinkedin.svg&w=48&q=75"
+                  />
                 </a>
               </Link>
             </div>
